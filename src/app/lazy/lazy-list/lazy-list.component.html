@@ -1,1 +1,3 @@
-<p>lazy-list works!</p>
+<ul *ngFor="let item of lazyItems$ | async">
+  <li>{{ item }}</li>
+</ul>
