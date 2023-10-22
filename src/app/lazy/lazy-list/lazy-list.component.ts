@@ -1,5 +1,4 @@
-import { Component, inject } from '@angular/core';
-import { LazyService } from 'src/app/lazy.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-lazy-list',
@@ -7,5 +6,5 @@ import { LazyService } from 'src/app/lazy.service';
   styleUrls: ['./lazy-list.component.css'],
 })
 export class LazyListComponent {
-  lazyItems$ = inject(LazyService).items$;
+  lazyItems = ['Item 1', 'Item 2', 'Item 3'];
 }
